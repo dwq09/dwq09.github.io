@@ -37,6 +37,17 @@ h1 {color:blue &hellip;">
 <link href="http://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Playball" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function addBlankTargetForLinks () {
+  $('a[href^="http"]').each(function(){
+      $(this).attr('target', '_blank');
+  });
+}
+
+$(document).bind('DOMNodeInserted', function(event) {
+  addBlankTargetForLinks();
+});
+</script>
 
   
 
@@ -65,9 +76,8 @@ h1 {color:blue &hellip;">
 </form>
   
 <ul class="main-navigation">
-  <li><a href="/">博客</a></li>
-  <li><a href="/blog/archives">归档</a></li>
-  <li><a href="/blog/aboutme">关于我</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
 </ul>
 
 </nav>
@@ -137,8 +147,8 @@ h1 {color:blue &hellip;">
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;p&gt;&lt;strong&gt;</span>内容1<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
-</span><span class='line'><span class="nt">&lt;li&gt;&lt;strong&gt;</span>内容2<span class="nt">&lt;/strong&gt;&lt;/li&gt;</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;&lt;</span><span class="nt">strong</span><span class="o">&gt;&lt;/</span><span class="nt">strong</span><span class="o">&gt;&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nt">ul</span><span class="o">&gt;&lt;</span><span class="nt">li</span><span class="o">&gt;&lt;</span><span class="nt">strong</span><span class="o">&gt;&lt;/</span><span class="nt">strong</span><span class="o">&gt;&lt;/</span><span class="nt">ul</span><span class="o">&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -175,6 +185,12 @@ h1 {color:blue &hellip;">
 <time datetime="2016-08-15T11:30:18+08:00" pubdate data-updated="true"></time>
       
 
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/css/'>css</a>
+  
+</span>
+
 
     </p>
     
@@ -203,6 +219,8 @@ h1 {color:blue &hellip;">
     
     <p class="meta">
       
+      
+        <a class="basic-alignment right" href="/blog/2016/08/15/octopress-windows-install/" title="Next Post: Windows下Octopress环境配置">Windows下Octopress环境配置 &raquo;</a>
       
     </p>
   </footer>
@@ -235,8 +253,20 @@ var duoshuoQuery = {short_name:"dwq000"};
 <aside class="sidebar">
   
     <section>
-  <h1>最近文章</h1>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/css'>css (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li></ul>
+</section>
+<section>
+  <h1>Category Cloud</h1>
+    <span id="tag-cloud"><a href='/blog/categories/css' style='font-size: 160.0%'>css(1)</a> <a href='/blog/categories/octopress' style='font-size: 160.0%'>octopress(1)</a> </span>
+</section>
+<section>
+  <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/08/15/octopress-windows-install/">Windows下Octopress环境配置</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/08/15/css/">CSS</a>

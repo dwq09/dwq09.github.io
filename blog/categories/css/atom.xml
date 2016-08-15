@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: css | DWQ's Blog]]></title>
+  <link href="http://dwq09.github.io/blog/categories/css/atom.xml" rel="self"/>
+  <link href="http://dwq09.github.io/"/>
+  <updated>2016-08-15T22:14:22+08:00</updated>
+  <id>http://dwq09.github.io/</id>
+  <author>
+    <name><![CDATA[DWQ]]></name>
+    <email><![CDATA[dwq09@qq.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CSS]]></title>
+    <link href="http://dwq09.github.io/blog/2016/08/15/css/"/>
+    <updated>2016-08-15T11:30:18+08:00</updated>
+    <id>http://dwq09.github.io/blog/2016/08/15/css</id>
+    <content type="html"><![CDATA[<h1>语法</h1>
+
+<pre><code class="css">[selector]{property:value;}
+[selector]{property1:value1;property2:value2;}
+[selector1],[selector2]{property:value;}
+</code></pre>
+
+<p>例：
+<code>css
+h1 {color:blue;}
+p {color:blue;font-family: "Sans serif";}
+h2,h3{color:red;}
+</code></p>
+
+<h1>继承</h1>
+
+<p>当前标签没有自己的样式，则继承父标签的样式。</p>
+
+<h1>派生选择器</h1>
+
+<p>根据上下文关系定位元素,已经定义的样式不会被覆盖</p>
+
+<p>html</p>
+
+<p>```</p>
+
+<p><strong></strong></p>
+
+
+<ul><li><strong></strong></ul>
+
+
+<pre><code>
+css
+</code></pre>
+
+<p>li strong{color:red;}
+strong{color:blue};
+```</p>
+]]></content>
+  </entry>
+  
+</feed>

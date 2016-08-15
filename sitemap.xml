@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://dwq09.github.io/blog/2016/08/15/octopress-windows-install/</loc>
+<lastmod>2016-08-15T17:53:38+08:00</lastmod>
+</url>
+<url>
 <loc>http://dwq09.github.io/blog/2016/08/15/css/</loc>
 <lastmod>2016-08-15T11:30:18+08:00</lastmod>
 </url>
@@ -12,5 +16,14 @@
 </url>
 <url>
 <loc>http://dwq09.github.io/blog/archives/</loc>
+</url>
+<url>
+<loc>http://dwq09.github.io/blog/aboutme/</loc>
+</url>
+<url>
+<loc>http://dwq09.github.io/blog/categories/css/</loc>
+</url>
+<url>
+<loc>http://dwq09.github.io/blog/categories/octopress/</loc>
 </url>
 </urlset>
