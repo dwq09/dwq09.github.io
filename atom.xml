@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[DWQ's Blog]]></title>
-  <link href="http://www.mycode.tech/atom.xml" rel="self"/>
-  <link href="http://www.mycode.tech/"/>
-  <updated>2016-08-14T19:23:15+08:00</updated>
-  <id>http://www.mycode.tech/</id>
+  <link href="http://dwq09.github.io/atom.xml" rel="self"/>
+  <link href="http://dwq09.github.io/"/>
+  <updated>2016-08-15T12:10:16+08:00</updated>
+  <id>http://dwq09.github.io/</id>
   <author>
     <name><![CDATA[DWQ]]></name>
     <email><![CDATA[dwq09@qq.com]]></email>
@@ -14,20 +14,55 @@
 
   
   <entry>
-    <title type="html"><![CDATA[first]]></title>
-    <link href="http://www.mycode.tech/blog/2016/08/14/first/"/>
-    <updated>2016-08-14T01:42:45+08:00</updated>
-    <id>http://www.mycode.tech/blog/2016/08/14/first</id>
-    <content type="html"><![CDATA[<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+    <title type="html"><![CDATA[CSS]]></title>
+    <link href="http://dwq09.github.io/blog/2016/08/15/css/"/>
+    <updated>2016-08-15T11:30:18+08:00</updated>
+    <id>http://dwq09.github.io/blog/2016/08/15/css</id>
+    <content type="html"><![CDATA[<h1>语法</h1>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'>   <span class="kd">class</span> <span class="nc">A</span><span class="o">{</span>
-</span><span class='line'>       <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
-</span><span class='line'>         <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;aaaa&quot;</span><span class="o">);</span>
-</span><span class='line'>       <span class="o">}</span>
-</span><span class='line'>   <span class="o">}</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="o">[</span><span class="nt">selector</span><span class="o">]</span><span class="p">{</span><span class="n">property</span><span class="o">:</span><span class="n">value</span><span class="p">;}</span>
+</span><span class='line'><span class="o">[</span><span class="nt">selector</span><span class="o">]</span><span class="p">{</span><span class="n">property1</span><span class="o">:</span><span class="n">value1</span><span class="p">;</span><span class="n">property2</span><span class="o">:</span><span class="n">value2</span><span class="p">;}</span>
+</span><span class='line'><span class="o">[</span><span class="nt">selector1</span><span class="o">],[</span><span class="nt">selector2</span><span class="o">]</span><span class="p">{</span><span class="n">property</span><span class="o">:</span><span class="n">value</span><span class="p">;}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>例：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">h1</span> <span class="p">{</span><span class="k">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;}</span>
+</span><span class='line'><span class="nt">p</span> <span class="p">{</span><span class="k">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;</span><span class="k">font-family</span><span class="o">:</span> <span class="s2">&quot;Sans serif&quot;</span><span class="p">;}</span>
+</span><span class='line'><span class="nt">h2</span><span class="o">,</span><span class="nt">h3</span><span class="p">{</span><span class="k">color</span><span class="o">:</span><span class="nb">red</span><span class="p">;}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>继承</h1>
+
+<p>当前标签没有自己的样式，则继承父标签的样式。</p>
+
+<h1>派生选择器</h1>
+
+<p>根据上下文关系定位元素,已经定义的样式不会被覆盖</p>
+
+<p>html</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;p&gt;&lt;strong&gt;</span>内容1<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+</span><span class='line'><span class="nt">&lt;li&gt;&lt;strong&gt;</span>内容2<span class="nt">&lt;/strong&gt;&lt;/li&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>css</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">li</span> <span class="nt">strong</span><span class="p">{</span><span class="k">color</span><span class="o">:</span><span class="nb">red</span><span class="p">;}</span>
+</span><span class='line'><span class="nt">strong</span><span class="p">{</span><span class="k">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">}</span><span class="o">;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
